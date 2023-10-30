@@ -1,19 +1,45 @@
+* {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
 body {
+    display: grid;
     color: #8b0505;
     background-color: rgb(38, 42, 70);
+    grid-template-columns: 1fr;
 }
 
 nav ul li a {
+    
     color: #fafafa;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
     }
 
-.header {
-  padding: 60px;
-  text-align: center;
+nav ul {
+  padding: 10px 0 ;
+  list-style: none;
+  background-color: #333751;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 90vw;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 5rem;
   background: #1abc9c;
   color: white;
   font-size: 30px;
+
 }
+
+
 footer {
     position: fixed;
     bottom: 0;
