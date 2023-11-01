@@ -47,4 +47,31 @@ footer {
     height: 60px;   /* Height of the footer */
     background: #6cf;
   }
-  
+
+h1 {
+  display: none;
+}
+
+.searchbar {
+  background-color:#333751;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+body{
+  border: 1px solid;
+}
+
+.backgroundbox {
+  margin: 1rem;
+  background-color: #333751;
+  width: auto;
+  padding: 8vw;
+  border-radius: 1%;
+}
+
+img{
+  padding: 0;
+  width: 20rem;
+}
