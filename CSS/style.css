@@ -33,7 +33,7 @@ header {
   justify-content: end;
   align-items: center;
   height: 5rem;
-  background: #1abc9c;
+  background: linear-gradient(91deg, #E4CB85 0.52%, #AABAF7 99.14%);
   color: white;
   font-size: 30px;
 
@@ -44,8 +44,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 60px;   /* Height of the footer */
-    background: #6cf;
+    height: 60px;   /* Height of the footer må endre til padding osv.. */
+    background: linear-gradient(91deg, #E4CB85 0.52%, #AABAF7 99.14%);
   }
 
 h1 {
@@ -64,14 +64,15 @@ body{
 }
 
 .backgroundbox {
-  margin: 1rem;
   background-color: #333751;
-  width: auto;
-  padding: 8vw;
-  border-radius: 1%;
+  margin: 1rem 1.5rem;
+  border-radius: 1rem;;
 }
 
-img{
-  padding: 0;
-  width: 20rem;
-}
+.cardimg {
+  display: block;
+  border: 5px solid green;
+  
+  margin-inline:auto;
+  border-radius: 5%;
+ }
