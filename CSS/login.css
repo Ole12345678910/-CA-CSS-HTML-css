@@ -1,0 +1,143 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Font Family for Specific Elements */
+h1, h2, .sign, .login, .exit-button {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(91deg, #E4CB85 0%, #AABAF7 100%);
+    background-size: 200% 200%;
+    animation: changeBackground 10s infinite;
+}
+
+/* Background Animation Keyframes */
+@keyframes changeBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Login Container Styling */
+.login-container {
+    background-color: #33375143;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 320px;
+    border: 1px solid #515151;
+}
+
+/* Sign Text Styling */
+.sign {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(236, 236, 236);
+}
+
+/* Heading 1 Styling */
+h1 {
+    margin: 0 0 20px;
+    color: #E4CB85;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin: 15px 0;
+}
+
+/* Label Styling */
+label {
+    font-family: lato;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input Group Styling */
+.input-group {
+    background-color: #fff3cc9d;
+    display: flex;
+    align-items: center;
+    border: 1px solid #515151;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 2.2rem;
+}
+
+/* Icon Styling */
+i {
+    color: #777;
+    margin-right: 10px;
+}
+
+/* Input Styling */
+input {
+    border: none;
+    outline: none;
+    flex: 1;
+    background-color: #ffffff00;
+}
+
+/* Login Button Styling */
+.login {
+    background: linear-gradient(91deg, #E4CB85 0.52%, #AABAF7 99.14%);
+    height: auto;
+    border: 1px solid #515151;
+    color: #515151;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.6rem 6.5rem;
+    transition: background 0.3s;
+    font-family: lato;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Hover Effect for Login Button */
+.login:hover {
+    background: #93939397;
+}
+
+/* Exit Button Styling */
+.exit-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* GameHub Logo Styling */
+.gamehublogo {
+    width: auto;
+    padding: 2rem;
+}

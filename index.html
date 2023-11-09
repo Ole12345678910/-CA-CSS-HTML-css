@@ -3,36 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Explore a wide range of exciting games at GameHub. Find the latest releases, exclusive offers, and more. Your ultimate destination for gaming adventures.">
 </head>
-<body>
+<body>    
 <header class="header-container">
+    <div class="menubox">
+        <img src="assest/GameHub_Logo lysereVs1.png" alt="logo av nettsiden" class="logoimg">
+    </div>
     <nav>
-        <ul>
-        <li>
-        <a href="index.html">Home</a>
-        </li>
-        <li>
-        <a href="products.html">Products</a>
-        </li>
-        <li>
-        <a href="about.html">About</a>
-        </li>
-        <li>
-        <a href="contact.html">Contact</a>
-        </li>
+        <ul class="header-nav">
+            <li>
+                <a href="about us.html" class="header-links">About us</a>
+            </li>
+            <li>
+                <a href="support.html" class="header-links">Support</a>
+            </li>
+            <li>
+                <a href="faq.html" class="header-links">FAQ</a>
+            </li>
+            <li>
+                <a href="login.html" class="header-links">Login</a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <i class="fas fa-cart-shopping"></i>
+                </a>
+            </li>
+            <li>
+                <input type="checkbox" id="toggle-checkbox">
+                <div class="toggle-box">
+                    <label for="toggle-checkbox" aria-label=""></label>
+                </div>
+            </li>
+            <li>
+                <label for="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </li>
         </ul>
-        </nav>
+    </nav>
+    <input type="checkbox" id="hamburger-menu">
+    <nav class="hamburger">
+        <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="about us.html">About us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
 </header>
-<div class="searchbar"></div>
-<div class="backgroundbox">
-    <img src="sale-box.png" alt="sale box Image" class="cardimg">
+<div class="searchbar">
+    <input type="text" class="search-input" placeholder="Search...">
+    <button class="search-button">
+        <i class="fas fa-search"></i>
+    </button>
 </div>
-    <h1>home page</h1>
-<footer>Hey</footer>
+<div class="backgroundbox">
+    <img src="assest/sale-box.png" alt="sale box Image" class="cardimg">
+    <img src="assest/FlereSpillCoverGame.png" alt="Flere spill opp varande" class="gameimg">
+</div>
+<div class="cards">
+    <a href="gameinfo.html" class="linkcard">
+        <div class="card" >
+            <img src="assest/GameHub_covers5.jpg" alt="AssassinGame">
+            <h2>Assassin Blade</h2>
+            <p class="info">Silence Speaks Louder. Unleash Your Legend, Embrace the Silence.</p>
+            <p class="price">199.50 kr</p>
+            <label for="toggle-checkbox" aria-label="Read more about Assassin">ADD TO CART</label>
+        </div>
+    </a>
+    <a href="gameinfo.html" class="linkcard">
+        <div class="card">
+            <img src="assest/GameHub_covers3.jpg" alt="BlackGame">
+            <h2>Black Abyss</h2>
+            <p class="info">Dive into the abyss of horror. Fear knows no escape.</p>
+            <p class="price">229.50 kr</p>
+            <label for="toggle-checkbox" aria-label="Read more about BlackGame">ADD TO CART</label>
+        </div>
+    </a>
+    <a href="gameinfo.html" class="linkcard">
+        <div class="card">
+            <img src="assest/GameHub_covers4.jpg" alt="FuriousGame">
+            <h2>Furious Monkey</h2>
+            <p class="info">Swing, Leap, Conquer. Go bananas, and seize victory!</p>
+            <p class="price">389.50 kr</p>
+            <label for="toggle-checkbox" aria-label="Read more about FuriousGame">ADD TO CART</label>
+        </div>
+    </a>
+    <a href="gameinfo.html" class="linkcard">
+        <div class="card">
+            <img src="assest/GameHub_covers6(1).jpg" alt="SpaceWarGame">
+            <h2>Space War</h2>
+            <p class="info">Conquer the Cosmos. Your Universe, Your Battle</p>
+            <p class="price">79.50 kr</p>
+            <label for="toggle-checkbox" aria-label="Read more about SpaceWarGame">ADD TO CART</label>
+        </div>
+    </a>
+</div>
+<div class="grid">
+    <div class="left">
+        <div class="column">
+            <div class="spot">
+                <a href="gameinfo.html">
+                    <img src="assest/GameHub_covers8.jpg" alt="Spill cover av boxer">
+                    <p class="price1">119.50 kr</p>
+                </a>
+            </div>
+            <div class="spot">
+                <a href="gameinfo.html">
+                    <img src="assest/GameHub_covers7.jpg" alt="Spill cover av racer">
+                    <p class="price1">399.50 kr</p>
+                </a>
+            </div>
+        </div>
+        <div class="column">
+            <div class="spot">
+                <a href="gameinfo.html">
+                    <img src="assest/GameHub_covers.jpg" alt="Spill cover av ping pong">
+                    <p class="price1">229.50 kr</p>
+                </a>
+            </div>
+            <div class="spot">
+                <a href="gameinfo.html">
+                    <img src="assest/GameHub_covers9.jpg" alt="Spill cover av cyberpunk">
+                    <p class="price1">239.50 kr</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <a href="gameinfo.html" class="linkcard">
+            <div class="big-spot">
+                <img src="assest/GameHub_covers2.jpg" alt="Spill cover av Super">
+                <p class="textsuper">Super offer</p>
+                <p class="textsuper">349.00 kr</p>
+                <p class="textsuper">700.00 kr</p>
+            </div>
+        </a>
+    </div>
+</div>
+<h1>home page</h1>
+<footer class="sticky-footer">
+    <nav>
+        <ul class="footer-nav">
+            <li>
+                <a href="about us.html" class="footer-links">About us</a>
+            </li>
+            <li>
+                <a href="support.html" class="footer-links">Support</a>
+            </li>
+            <li>
+                <a href="faq.html" class="footer-links">FAQ</a>
+            </li>
+            <li>
+                <a href="login.html" class="footer-links">Login</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="footerbox">
+        <div class="box">
+            <a href="https://www.twitch.tv" class="linkcard"><i class="fab fa-twitch"></i></a>
+            <a href="https://www.facebook.com" class="linkcard"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com" class="linkcard"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com" class="linkcard"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="content">
+            <img src="assest/GameHub_Logo lysereVs1.png" alt="logo av gamehub">
+            <p class="copyright">© 2023 GameHub. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

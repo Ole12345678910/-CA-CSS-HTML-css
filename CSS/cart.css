@@ -1,0 +1,267 @@
+/* Reset and Font Styles */
+* {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: linear-gradient(91deg, #E4CB85 0.52%, #AABAF7 99.14%);
+}
+
+/* Hide Default Heading Style */
+h1 {
+  display: none;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(91deg, #E4CB85 0.52%, #AABAF7 99.14%);
+}
+
+/* Product Item Styles */
+.item {
+  display: flex;
+  background-color: #676767;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: end;
+}
+
+/* Product Image Styles */
+.item img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: auto;
+}
+
+/* Product Image Styles in the Container */
+.boxerimg {
+  background-color: rgba(0, 0, 0, 0.322);
+  margin: 20px;
+  padding: 0 10px 10px 0;
+  width: 400px;
+  height: auto;
+  border-radius: 1%;
+}
+
+/* Container Styles */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-rows: auto auto; /* Two rows, first row for image and text, second row for the row */
+  margin: 2.5rem 0;
+  background-color: #4D5579;
+  border-radius: 1rem;
+}
+
+/* Image Column Styles */
+.image-column {
+  grid-row: 1 / 3; /* Spans from the first row to the third row (image and text column) */
+}
+
+/* Text Column Styles */
+.text-column {
+  grid-row: 1 / 3; /* Spans from the first row to the third row (image and text column) */
+  display: flex;
+  margin: 3rem 3rem 11rem 0;
+  flex-direction: column;
+  justify-content: flex-start; /* Align text to the top of the column */
+  background-color: rgba(38, 42, 70, 0.547);
+  font-size: 1.5rem;
+  color: white;
+  line-height: 0.8;
+  border-radius: 1rem;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.496);
+}
+
+/* Text Paragraph Styles */
+.text-column p {
+  padding: 1rem 0 0 1rem;
+}
+
+/* General Paragraph Styles */
+p {
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Row Styles */
+.row {
+  grid-column: 1 / 3; /* Spans the entire width of both columns */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* First Paragraph in Text Column Styles */
+.text-column p:first-child {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #E4CB85;
+  font-family: 'Archivo Black', sans-serif;
+  text-shadow: 5px 5px #00000080;
+}
+
+/* Price Line Styles */
+.line {
+  flex-direction: row;
+  display: flex;
+  background-color: #656878;
+  width: 200%;
+  margin: 2rem 0;
+  height: 100px;
+  align-items: end;
+  justify-content: end;
+}
+
+/* Last Paragraph in Price Line Styles */
+.line p:last-child {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'Archivo Black', sans-serif;
+  padding: 0 2rem 1rem 0;
+  color: #E4CB85;
+  text-shadow: 5px 5px #00000059;
+}
+
+/* Second Paragraph in Price Line Styles */
+.line p:nth-child(2) {
+  color: #E4CB85;
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  padding-bottom: 1.4rem;
+}
+
+/* First Paragraph in Price Line Styles */
+.line p:first-child {
+  color: #c1c1c1;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1rem;
+  padding-bottom: 1.4rem;
+  text-decoration: line-through;
+}
+
+/* Checkout Section Styles */
+.backgroundcheck {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(91deg, #E4CB85 0.52%, #AABAF7 99.14%);
+}
+
+/* Footer Styles */
+footer {
+  background: linear-gradient(91deg, #E4CB85 0.52%, #AABAF7 99.14%);
+}
+
+/* Checkout Button Styles */
+.checkout {
+  border: #3FA535;
+  background-color: #3FA535;
+  border-radius: 0.5rem;
+  width: 400px;
+  height: 100px;
+  margin: 6rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2rem;
+  text-shadow: 4px 4px black;
+  color: #E4CB85;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+/* Hover Effect for Checkout Button */
+.checkout:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* Exit Button Styles */
+.exit-button {
+  padding: 0 1rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 900px) {
+  .text-column:last-child {
+    font-size: 1rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  } 
+
+  .line {
+    align-items: center;
+    width: auto;
+  }
+
+  .boxerimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+
+  .boxerimg img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .text-column {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    line-height: 0.5;
+  }
+
+  div.text-column p.text:first-child {
+    font-size: 1.8rem;
+  }
+
+  .line p:last-child {
+    font-size: 1.4rem;
+  }
+
+  .line p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  .boxerimg {
+    background-color: rgba(0, 0, 0, 0.322);
+    margin: 20px;
+    padding: 0 10px 10px 0;
+    width: 150px;
+    height: auto;
+    border-radius: 1%;
+  }
+
+  .checkout {
+    margin-bottom: 3rem;
+    width: 260px;
+  }
+}

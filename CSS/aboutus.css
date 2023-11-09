@@ -1,0 +1,189 @@
+/* Reset some default styles for all elements */
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif; /* Set default font family */
+    font-family: 'Archivo Black', sans-serif; /* Additional font family */
+}
+
+/* Basic styling for the entire page */
+body {
+    background-color: #262A46; /* Background color */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header container */
+.headerbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerbox img {
+    margin: 1rem;
+}
+
+.headerbox {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(91deg, #E4CB85 0.52%, #AABAF7 99.14%); /* Gradient background */
+}
+
+/* Styling for the exit button */
+.exit-button {
+    padding: 0 1rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Styling for the main content text box */
+.textbox {
+    padding: 0 2rem 2rem 2rem;
+    margin: 2rem;
+    line-height: 2.5;
+    border-radius: 1rem;
+    background-color: #4D5579; /* Background color */
+    overflow: hidden;
+}
+
+/* Styling for the first child text (centered) */
+.text:first-child{
+    text-align: center;
+}
+
+.text1{
+    color: #E4CB85; /* Text color */
+    font-size: 1.5rem;
+}
+
+/* Styling for the horizontal line under the text */
+.lineunder {
+    background-color: #393D57; /* Line color */
+    width: 100%;
+    height: 3px;
+}
+
+/* Styling for the rest of the text */
+.text:not(:first-child) {
+    color: rgb(255, 255, 255); /* Text color */
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+}
+
+/* Styling for unordered lists */
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Styling for the main heading */
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    color: #E4CB85; /* Text color */
+    justify-content: center;
+}
+
+/* Styling for the sticky footer */
+.sticky-footer {
+    background: linear-gradient(91deg, #E4CB85 0.52%, #AABAF7 99.14%); /* Gradient background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the copyright text */
+.copyright {
+    font-family: 'Lato', sans-serif;
+    padding: 1rem;
+    color: white; /* Text color */
+    text-decoration: underline;
+}
+.linkcard{
+    text-decoration: none;
+}
+
+/* Styling for the logo image */
+.logoimg {
+    padding: 1rem;
+}
+
+/* Styling for the navigation list items */
+nav ul li {
+    flex: 0 0 auto;
+    flex-direction: row;
+    flex: 1;
+    display: flex; 
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Styling for icons */
+i {
+    font-size: 2rem;
+    color: #E4CB85; /* Icon color */
+    padding: 0.5rem 1.5rem; /* Adjust padding for space around the icons */
+}
+
+/* Styling for the left side of the footer */
+.left-side {
+    width: 60%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    background-color: #333751; /* Background color */
+    border-radius: 1rem;
+    padding: 0 1rem;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+/* Styling for the right side of the footer */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Styling for navigation list item links */
+nav ul li a {
+    display: flex;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+
+/* Media query for screens with a maximum width of 1000px */
+@media (max-width: 1000px) {
+    .left-side {
+        width: 80%;
+        height: auto;
+        display: flex;
+        margin: 2rem;
+    }
+    i {
+        font-size: 1.5rem;
+    }
+    nav ul li a{
+        margin: 0 auto;
+    }
+    ul{
+        padding: 0;
+    }
+    .sticky-footer{
+        flex-direction: column;
+    }
+    .right-side img{
+        padding: 0;
+    }
+}

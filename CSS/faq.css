@@ -1,0 +1,198 @@
+/* Resetting margin and setting default font for all elements */
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: #262A46;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header container styles */
+.headerbox img {
+    margin: 1rem;
+}
+
+.headerbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(91deg, #E4CB85 0.52%, #AABAF7 99.14%);
+}
+
+/* Exit button styles */
+.exit-button {
+    padding: 0 1rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Main content container styles */
+.textbox {
+    padding: 0 2rem 2rem 2rem;
+    margin: 2rem;
+    line-height: 2.5;
+    border-radius: 1rem;
+    background-color: #4D5579;
+    overflow: hidden;
+}
+
+/* Styles for the first child text element */
+.text:first-child {
+    text-align: center;
+}
+
+/* Styles for specific text elements with class 'text1' */
+.text1 {
+    color: #E4CB85;
+    font-size: 1.5rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Styling for the line under text elements */
+.lineunder {
+    background-color: #393D57;
+    width: 100%;
+    height: 3px;
+}
+
+/* Styling for text elements that are not the first child */
+.text:not(:first-child) {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+/* Styles for unordered lists */
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Styles for main headings */
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    color: #E4CB85;
+    justify-content: center;
+}
+
+/* Styles for the sticky footer */
+.sticky-footer {
+    background: linear-gradient(91deg, #E4CB85 0.52%, #AABAF7 99.14%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles for copyright text in the footer */
+.copyright {
+    padding: 1rem;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Styles for links in the footer */
+.linkcard {
+    text-decoration: none;
+}
+
+/* Styles for logo image in the footer */
+.logoimg {
+    padding: 1rem;
+}
+
+/* Styles for navigation list items */
+nav ul li {
+    flex: 0 0 auto;
+    flex-direction: row;
+    flex: 1;
+    display: flex;
+}
+
+/* Styles for unordered lists in navigation */
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Styles for icons */
+i {
+    font-size: 2rem;
+    color: #E4CB85;
+    padding: 0.5rem 1.5rem; /* Adjust padding for space around the icons */
+}
+
+/* Styles for the left-side navigation container */
+.left-side {
+    width: 60%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    background-color: #333751;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+/* Styles for the right-side container in the footer */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Styles for navigation list item links */
+nav ul li a {
+    display: flex;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+
+/* Media query for screens with a max-width of 1000px */
+@media (max-width: 1000px) {
+    .left-side {
+        width: 80%;
+        height: auto;
+        display: flex;
+        margin: 2rem;
+    }
+
+    /* Adjusting icon size for smaller screens */
+    i {
+        font-size: 1.5rem;
+    }
+
+    /* Centering navigation links for smaller screens */
+    nav ul li a {
+        margin: 0 auto;
+    }
+
+    /* Removing padding for unordered lists */
+    ul {
+        padding: 0;
+    }
+
+    /* Adjusting layout for the sticky footer on smaller screens */
+    .sticky-footer {
+        flex-direction: column;
+    }
+
+    /* Removing padding for the right-side container's image on smaller screens */
+    .right-side img {
+        padding: 0;
+    }
+}

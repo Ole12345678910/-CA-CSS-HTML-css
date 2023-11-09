@@ -1,0 +1,87 @@
+/* Resetting margin, padding, and box-sizing, and setting default font family */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Applying 'Archivo Black' font to specific text elements */
+.text-first, .text-second {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+/* Body styling with flex layout and gradient background animation */
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(91deg, #E4CB85 0%, #AABAF7 100%);
+  background-size: 200% 200%;
+  animation: changeBackground 10s infinite;
+}
+
+/* Keyframes for background animation */
+@keyframes changeBackground {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 0%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+/* Button styling with gradient background, shadow, and padding */
+.button {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: white;
+  margin-top: 2.5rem;
+  padding: 1.2rem;
+  border-radius: 70px;
+  background: linear-gradient(121deg, rgba(84, 103, 125, 0.62) 31.07%, rgba(196, 191, 185, 0.62) 83.85%);
+  box-shadow: 0px 4px 4px 0px #4C4F5F;
+}
+
+/* Styling for the first text element with uppercase, color, stroke, and shadow */
+.text-first {
+  text-transform: uppercase;
+  color: #E4CB85;
+  font-size: 4rem;
+  -webkit-text-stroke: 2px #393d57b8;
+  text-shadow: 4px 4px #393d57b8;
+}
+
+/* Styling for the second text element with color, stroke, and shadow */
+.text-second {
+  font-size: 2rem;
+  color: #E4CB85;
+  -webkit-text-stroke: 2px #393d57b8;
+  text-shadow: 2px 2px #393d57b8;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 500px) {
+  img {
+      height: 200px;
+  }
+  .text-first {
+      font-size: 3rem;
+  }
+  .text-second {
+      font-size: 1.5rem;
+  }
+  .button {
+      font-size: 1.2rem;
+      padding: 1rem;
+  }
+}

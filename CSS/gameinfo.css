@@ -1,0 +1,226 @@
+/* Resetting margins and setting a default font for all elements */
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #262A46 0%, #D4BE88 100%);
+}
+
+/* Styling for header box */
+.headerbox {
+    border-radius: 0.5rem;
+}
+
+/* Applying 'Archivo Black' font to specified elements */
+h1, h2, .text1-first, .text-second, header, .addtocart, .sale {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Styling for exit button */
+.exit-button {
+    padding: 0 1rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Header styling */
+header {
+    font-size: 1.7rem;
+    background-color: #393D57;
+    margin: 2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #E4CB85;
+}
+
+/* Styling for undertext */
+.undertext {
+    text-transform: none;
+    font-size: 1.5rem;
+}
+
+/* Styling for image container */
+.container {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styling for images inside the container */
+.container img {
+    margin: 1rem;
+    max-height: 500px;
+    width: auto;
+    border-radius: 0.5rem;
+}
+
+/* Styling for infobox */
+.infobox {
+    margin: 2rem 2rem 1rem 2rem;
+    flex-direction: column;
+    border-radius: 5px;
+    background: linear-gradient(111deg, rgba(180, 162, 112, 0.20) 1.33%, rgba(0, 0, 0, 0.00) 122.93%), #333751;
+    display: flex;
+    padding: 1rem;
+    line-height: 1.2;
+    border-radius: 0.5rem;
+}
+
+/* Styling for text-first */
+.text-first {
+    font-size: 1.3rem;
+    color: #898989;
+    text-align: end;
+    text-decoration: line-through;
+    justify-self: end;
+}
+
+/* Styling for textline */
+.textline {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for text-second */
+.text-second {
+    font-size: 2rem;
+    color: #E4CB85;
+}
+
+/* Styling for text-third */
+.text-third {
+    font-size: 0.8rem;
+    color: white;
+    padding-top: 1.5rem;
+}
+
+/* Styling for addtocart button */
+.addtocart {
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin: 1rem 5rem 2rem 5rem;
+    height: 100px;
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    background-color: #3FA535;
+    border: #3FA535;
+    border-radius: 0.5rem;
+    text-shadow: 4px 4px black;
+    color: #E4CB85;
+    overflow: hidden;
+    border: solid 1px black;
+    text-decoration: none;
+}
+
+/* Styling for sale */
+.sale {
+    background-color: #E4CB85;
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding: 1rem;
+    width: 100px;
+    height: auto;
+    border-radius: 0.5rem;
+    -webkit-text-stroke: 1.5px white;
+}
+
+/* Styling for tags */
+.tags {
+    color: #E4CB85;
+    letter-spacing: 2px;
+}
+
+/* Styling for text */
+.text {
+    padding-top: 0.3rem;
+    color: white;
+}
+
+/* Styling for underbox */
+.underbox {
+    background-color: #393D57;
+    margin: 0 2rem 2rem 2rem;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+/* Styling for aboutbox */
+.aboutbox {
+    background-color: #333751;
+    padding: 2rem;
+    line-height: 1.5;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Styling for text1-first */
+.text1-first {
+    padding-bottom: 2.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #E4CB85;
+}
+
+/* Styling for text1-second */
+.text1-second {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: white;
+}
+
+/* Additional styling for exit button in smaller screens */
+.exit-button {
+    padding: 0 1rem;
+    position: absolute;
+    top: 28px;
+    right: 23px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Media query for screens with a max-width of 800px */
+@media (max-width: 800px) {
+    .infobox {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .addtocart {
+        font-size: 1.7rem;
+        width: 230px;
+        margin: 1rem;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .underbox {
+        margin: 0 1rem;
+    }
+    .container img {
+        width: auto;
+        height: 370px;
+    }
+    .aboutbox {
+        margin: 2rem;
+    }
+    /* Additional styling for textline paragraph in smaller screens */
+    .textline p {
+        font-size: 0.5rem;
+    }
+}
