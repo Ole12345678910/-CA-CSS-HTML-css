@@ -5,7 +5,7 @@
 }
 
 /* Apply a specific font family to certain elements */
-.textsuper, .image-overlay, .card label {
+.textsuper, .image-overlay, .card a {
   font-family: 'Archivo Black', sans-serif;
 }
 
@@ -205,7 +205,6 @@ nav.hamburger li a:hover {
 
 /* Style the cards container */
 .cards {
-  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,6 +216,7 @@ nav.hamburger li a:hover {
 
 /* Style individual cards */
 .card {
+  position: relative;
   line-height: 1.5;
   max-width: 270px;
   margin: 2rem;
@@ -263,7 +263,7 @@ h2 {
 }
 
 /* Style the label within cards */
-.card label {
+.card a {
   font-size: 1.3rem;
   display: block;
   border: none;
@@ -274,11 +274,7 @@ h2 {
   border-radius: 0 0 0.5rem 0.5rem;
   cursor: pointer;
   text-shadow: 4px 4px black;
-}
 
-/* Adjust opacity on label hover */
-.card label:hover {
-  opacity: 0.7;
 }
 
 /* Set underline to disappear on hyperlink hover within cards */
@@ -292,26 +288,6 @@ button {
   font-size: 16px;
 }
 
-/* Style the toggle box */
-.toggle-box {
-  width: 15px;
-  position: absolute;
-  transform: translate(-38px);
-  height: 15px;
-  background-color: rgb(255, 123, 123);
-  border-radius: 1rem;
-  display: none;
-}
-
-/* Hide the toggle checkbox */
-#toggle-checkbox {
-  display: none;
-}
-
-/* Show the toggle box when checkbox is checked */
-#toggle-checkbox:checked + .toggle-box {
-  display: block;
-}
 
 /* Style the footer links */
 a.footer-links {
@@ -438,11 +414,6 @@ label {
   display: none;
   color: #FFF3CC;
   cursor: pointer;
-}
-
-/* Show the button when checkbox is checked */
-#toggle-checkbox:checked + label + .show-button {
-  display: inline-block;
 }
 
 /* Create a flex container for the grid */
@@ -576,9 +547,9 @@ label {
 /* Media queries for tablet screens */
 @media (min-width: 800px) {
   .cards {
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
   }
 
   .card {
