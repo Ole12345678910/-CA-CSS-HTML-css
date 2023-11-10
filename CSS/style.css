@@ -196,7 +196,7 @@ nav.hamburger li a:hover {
 }
 
 /* Style the card image */
-.cardimg {
+.salebox {
   padding: 0 2rem 6rem 1rem;
   margin: 1rem;
   max-width: 600px;
@@ -218,7 +218,7 @@ nav.hamburger li a:hover {
 .card {
   position: relative;
   line-height: 1.5;
-  max-width: 270px;
+  max-width: 350px;
   margin: 2rem;
   text-align: center;
   background-color: #242739;
@@ -565,7 +565,7 @@ label {
     flex-grow: 1;
   }
 
-  .cardimg {
+  .salebox {
     width: 100%;
   }
 
