@@ -1,6 +1,6 @@
 # CA-CSS-HTML
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://github.com/Ole12345678910/-CA-CSS-HTML-css/assets/144427985/f0d4608f-0d34-4401-ae0c-6dc2a42ccb50)
 
 A simple overview of the use/purpose of the project.
 
