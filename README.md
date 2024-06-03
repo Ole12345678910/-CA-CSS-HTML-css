@@ -11,24 +11,21 @@ You can add some bullet points if you'd like to:
 - Clean Design: Simple and user-friendly layout for easy navigation.
 - 
 - Responsive Layout: Adjusts to different screen sizes for optimal viewing.
-- 
+
 - Product Showcase: Displays gaming consoles, games, and accessories with images and brief descriptions.
-- 
+
 - Navigation Menu: Accessible links to Home, Products, About Us, and Contact sections.
-- 
+
 - Hero Section: Eye-catching banner highlighting featured products or promotions.
-- 
+
 - Styled Buttons: Custom CSS buttons for actions like "Add to Cart" and "Learn More."
-- 
+
 - Consistent Style: Uniform use of fonts and colors for a cohesive look.
-- 
+
 - Footer: Includes links to social media profiles and contact information.
-- 
+
 - Static Site: Demonstration only, without backend functionality or e-commerce features.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- CSS and HTML
