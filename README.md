@@ -4,27 +4,10 @@
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
-
-You can add some bullet points if you'd like to:
-
-- Clean Design: Simple and user-friendly layout for easy navigation.
-
-- Responsive Layout: Adjusts to different screen sizes for optimal viewing.
-
-- Product Showcase: Displays gaming consoles, games, and accessories with images and brief descriptions.
-
-- Navigation Menu: Accessible links to Home, Products, About Us, and Contact sections.
-
-- Hero Section: Eye-catching banner highlighting featured products or promotions.
-
-- Styled Buttons: Custom CSS buttons for actions like "Add to Cart" and "Learn More."
-
-- Consistent Style: Uniform use of fonts and colors for a cohesive look.
-
-- Footer: Includes links to social media profiles and contact information.
-
-- Static Site: Demonstration only, without backend functionality or e-commerce features.
+This project is a gaming shop website created using HTML and CSS for a school assignment. 
+It features a clean, responsive design that showcases various gaming products, including consoles, games, and accessories. 
+The site includes a user-friendly navigation menu, a prominent hero section for featured products, and custom-styled buttons for actions like "Add to Cart." 
+While the website is purely static and does not include backend functionality, it effectively demonstrates web design principles and responsive layout techniques.
 
 ## Built With
 
