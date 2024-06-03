@@ -9,7 +9,7 @@ Add a more detailed description of what your project entails and set out to do.
 You can add some bullet points if you'd like to:
 
 - Clean Design: Simple and user-friendly layout for easy navigation.
-- 
+
 - Responsive Layout: Adjusts to different screen sizes for optimal viewing.
 
 - Product Showcase: Displays gaming consoles, games, and accessories with images and brief descriptions.
